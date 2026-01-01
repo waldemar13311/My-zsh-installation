@@ -3,17 +3,17 @@
 
 ### Установка
 ```bash
-$ ansible-galaxy install -r .ansible/requirements.yml
-$ ansible-playbook playbooks/install-zsh.ansible.yml -K
-$ ansible-playbook playbooks/install-my-gnzh-theme.ansible.yml -K
+ansible-galaxy install -r .ansible/requirements.yml
+ansible-playbook playbooks/install-zsh.ansible.yml -K
+ansible-playbook playbooks/install-my-gnzh-theme.ansible.yml -K
 ```
 
 ### Дальнейшая настройка
 #### Docker autocomplete
 ```bash
-$ mkdir -p ~/.oh-my-zsh/completions
-$ docker completion zsh > ~/.oh-my-zsh/completions/_docker
-$ cat <<"EOT" >> ~/.zshrc.local
+mkdir -p ~/.oh-my-zsh/completions
+docker completion zsh > ~/.oh-my-zsh/completions/_docker
+cat <<"EOT" >> ~/.zshrc.local
 # Автодополнение для docker (добавлено мной)
 FPATH="$HOME/.docker/completions:$FPATH"
 autoload -Uz compinit
