@@ -1,0 +1,4 @@
+# Игнорировать всё в .ansible, кроме requirements.yml
+.ansible/*
+!.ansible/requirements.yml
+

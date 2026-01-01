@@ -1,0 +1,6 @@
+---
+roles:
+  - src: viasite-ansible.zsh
+    name: viasite-ansible.zsh
+    version: v3.7.9
+...
